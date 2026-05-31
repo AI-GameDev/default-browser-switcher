@@ -25,17 +25,8 @@ ditto "$ROOT_DIR/dist/SetBrowser.app" "$APP_STAGE_DIR/SetBrowser.app"
 
 cp "$ROOT_DIR/.build/$CONFIGURATION/setbrowser" "$CLI_DIR/setbrowser"
 chmod +x "$CLI_DIR/setbrowser"
-
-cat > "$CLI_DIR/README.txt" <<TXT
-SetBrowser CLI $VERSION
-
-Install:
-  cp setbrowser /usr/local/bin/
-
-Usage:
-  setbrowser list
-  setbrowser <browser-name-or-number>
-TXT
+cp "$ROOT_DIR/LICENSE" "$CLI_DIR/LICENSE"
+cp "$ROOT_DIR/PRIVACY.md" "$CLI_DIR/PRIVACY.md"
 
 xattr -cr "$STAGING_DIR" 2>/dev/null || true
 

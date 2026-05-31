@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.1 - 2026-05-31
+
+- Add MIT License.
+- Add privacy and security disclosure documents.
+- Document Gatekeeper warning expectations for unsigned, unnotarized builds.
+- Include license and privacy notices in release artifacts.
+
 ## 0.1.0 - 2026-05-28
 
 Initial release.

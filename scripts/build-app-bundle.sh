@@ -40,6 +40,9 @@ if [[ -f "$ICON_SOURCE" ]]; then
   iconutil -c icns "$ICONSET_DIR" -o "$ICON_FILE"
 fi
 
+cp "$ROOT_DIR/LICENSE" "$RESOURCES_DIR/LICENSE"
+cp "$ROOT_DIR/PRIVACY.md" "$RESOURCES_DIR/PRIVACY.md"
+
 cat > "$CONTENTS_DIR/Info.plist" <<PLIST
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
