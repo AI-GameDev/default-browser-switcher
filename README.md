@@ -89,6 +89,34 @@ Release artifacts are written to `dist/release/<version>/`.
 Release builds are not Developer ID signed or notarized yet. macOS Gatekeeper
 may warn on first launch when the app is downloaded from GitHub.
 
+Only open release builds if you downloaded them from this repository and trust
+the artifact.
+
+To open the app release:
+
+1. Unzip `SetBrowser-<version>-macOS-app.zip`.
+2. Move `SetBrowser.app` to `/Applications`.
+3. Try opening `SetBrowser.app` once.
+4. If macOS blocks it, open `System Settings > Privacy & Security`.
+5. Find the SetBrowser warning and choose `Open Anyway`.
+
+Do not disable Gatekeeper globally.
+
+For the CLI release, unzip `setbrowser-<version>-macOS-cli.zip` and install the
+binary manually:
+
+```sh
+cd setbrowser-cli-<version>
+cp setbrowser /usr/local/bin/
+```
+
+If macOS blocks the downloaded CLI binary because it is unsigned, prefer
+building the CLI from source:
+
+```sh
+swift build -c release --product setbrowser
+```
+
 SetBrowser is not affiliated with, endorsed by, or sponsored by Apple, Google,
 Dia, The Browser Company, or any browser vendor.
 
