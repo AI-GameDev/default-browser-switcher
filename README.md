@@ -100,6 +100,15 @@ To open the app release:
 4. If macOS blocks it, open `System Settings > Privacy & Security`.
 5. Find the SetBrowser warning and choose `Open Anyway`.
 
+If macOS says `SetBrowser.app` is damaged and must be moved to the Trash, the
+downloaded app may still have a quarantine attribute. If you trust the artifact,
+remove the quarantine attribute for this app only:
+
+```sh
+xattr -dr com.apple.quarantine /Applications/SetBrowser.app
+open /Applications/SetBrowser.app
+```
+
 Do not disable Gatekeeper globally.
 
 For the CLI release, unzip `setbrowser-<version>-macOS-cli.zip` and install the
@@ -115,6 +124,14 @@ building the CLI from source:
 
 ```sh
 swift build -c release --product setbrowser
+```
+
+If you still want to run the downloaded CLI binary directly, remove the
+quarantine attribute for that binary only:
+
+```sh
+xattr -d com.apple.quarantine ./setbrowser
+./setbrowser list
 ```
 
 SetBrowser is not affiliated with, endorsed by, or sponsored by Apple, Google,
