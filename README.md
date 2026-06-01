@@ -59,8 +59,18 @@ open dist/SetBrowser.app
 The app bundle uses `Assets/AppIcon/setbrowser-icon.png` to generate
 `SetBrowser.icns` during bundling.
 
-Open `SetBrowser > Settings...` to enable alerts only for real failures or
-quit the app automatically after a successful browser change.
+### Settings
+
+Open `SetBrowser > Settings...` to configure app behavior.
+
+- `Show alerts only when a change fails`: successful browser changes update the
+  list without showing a popup. Failed changes still show an alert.
+- `Quit SetBrowser after a successful change`: the app closes automatically
+  after the selected browser is verified as the default.
+
+These settings work independently. macOS may still show its own confirmation
+dialog when changing the default browser; that system dialog is separate from
+SetBrowser alerts, and you need to approve it for the change to take effect.
 
 ## Install CLI
 
