@@ -6,3 +6,9 @@ dist/
 *.xcuserstate
 *.xcuserdata/
 *.xcodeproj/project.xcworkspace/xcuserdata/
+
+# Local AI coding assistant instructions
+AGENTS.md
+CLAUDE.md
+.claude/
+.codex/

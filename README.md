@@ -1,5 +1,7 @@
 # SetBrowser
 
+[English](README.md) | [한국어](README.ko.md)
+
 Native macOS app and CLI for changing the default browser.
 
 Current version: `0.1.1`
