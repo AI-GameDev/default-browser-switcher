@@ -4,6 +4,8 @@
 
 Native macOS app and CLI for changing the default browser.
 
+![SetBrowser browser selection screen](Assets/Screenshots/setbrowser-main-dark.png)
+
 Current version: `0.1.1`
 
 ## Requirements

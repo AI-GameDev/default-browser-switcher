@@ -4,6 +4,8 @@
 
 macOS의 기본 브라우저를 변경하는 네이티브 앱과 CLI입니다.
 
+![SetBrowser 브라우저 선택 화면](Assets/Screenshots/setbrowser-main-dark.png)
+
 현재 버전: `0.1.1`
 
 ## 요구 사항
